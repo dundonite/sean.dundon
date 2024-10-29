@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import mendenhallImg from 'public/mendenhall.jpg'; // Import the image statically
+import mendenhallImg from '/mendenhall.jpg'; // Import the image statically
 
 export default function Home() {
   return (

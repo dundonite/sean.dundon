@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import SocialLinks from '../components/SocialLinks';
-import profileImg from 'public/profile.png';
 
 export default function Bio() {
   return (
@@ -17,7 +16,7 @@ export default function Bio() {
         </div>
         <div className="md:w-1/2">
           <Image
-            src={profileImg}
+            src='/profile.png'
             alt="A photo of me"
             width={300}
             height={300}
