@@ -1,13 +1,17 @@
-import Link from 'next/link'
+import Image from 'next/image';
+import mendenhallImg from 'public/mendenhall.jpg'; // Import the image statically
 
-export default function Page() {
-
+export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p className="mt-4 text-xl text-gray-600">
-        Start editing this page and see your changes in real-time.
-      </p>
-    </main>
-  )
-
+    <div className="relative w-full h-screen">
+      <h1 className="sr-only">Home</h1> {/* Hides this heading for screen readers */}
+      <Image
+        src={mendenhallImg}
+        alt="Face of Mendenhall Glacier, Alaska"
+        fill
+        className="object-cover object-center hidden md:block"
+        priority
+      />
+    </div>
+  );
 }

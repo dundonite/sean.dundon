@@ -1,0 +1,3 @@
+[submodule "modules/resume"]
+	path = modules/resume
+	url = https://github.com/dundonite/resume
