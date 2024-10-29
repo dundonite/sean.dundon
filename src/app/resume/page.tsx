@@ -1,4 +1,5 @@
-import { basics, work, skills } from '../../../modules/resume/src/resume.json';
+const resumeData = require('../../../modules/resume/src/resume.json');
+const { basics, work, skills } = resumeData;
 import Image from 'next/image';
 import Link from 'next/link';
 
